@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+	<head>
+     		<meta charset="utf-8">
+     		<title>Weihnachten</title>
+     		<link rel = "stylesheet" href ="css/style.css"/>
+   	</head>
+   	<body>
+  	<!--Ausnahme: innerhabl von HTML ist kein SVG Prolog
+  	 notwendig -->
+  		<svg>
+  	    	<rect width="100%" height="100%" fill="red"> 
+  	        	<animate
+  	           	attributeName="fill"
+  	           	values="red;green;blue;gold;red"
+  	           	begin="1"
+  	           	dur="10"
+  	           	repeatCount="3"
+  	           	fill="freeze"
+  	        	/>
+  	    	</rect>
+  	    
+  	    	<polygon id="sternteil1" fill="green" stroke="none"
+  	    		points="350 30, 400 80, 300 80">
+  	    	
+  	    		<animate begin="sternteil1.click" attributeName="points"
+  	    		dur="1600ms" to="350 20, 410 80, 290 80"/>
+ 
+  	    	</polygon>
+  	    
+  	    	<polygon id="sternteil2" fill="green" stroke="none"
+  	    		points="300 50, 400 50, 350 100">
+  	    	
+  	    		<animate begin="sternteil2.click" attributeName="points"
+  	    		dur="1600ms" to="300 40, 400 40, 350 110"/>
+  	    	</polygon>
+  	    
+  	    	<line x1="520" y1="0" x2="520" y2="300" stroke="midnightblue"/>
+  	    
+  	    	<text x="10" y="80" 
+  	    		style="font-size:70px;font-style:italic;stroke:darkgrey;fill:lightblue"
+  	    		rotate="-5,-5,-5">
+  	    			Happy
+  	    	</text>
+
+  	    	<text x="10" y="160" 
+  	    		style="font-size:70px;font-style:italic;stroke:red;fill:yellow">
+  	    			Holidays	
+  	    	</text>
+  	    
+  	    	<rect x="0" y="200" width="800" height="500" stroke="rgb(0,0,0)" />
+  	    	
+  	    	<!--Funktionsdefinition-->
+  	    	<defs>
+  	    	
+  	    		<radialGradient id="radial">
+  	    			<stop offset = "0%" stop-color="white"/>
+  	    			<stop offset = "100%" stop-color="grey"/>
+  	    		</radialGradient>
+  		</defs>
+  		
+  		<circle cx="320" cy="450" r="130" fill="url(#radial)">
+  			<animateTransform
+  				attributeName="transform"
+  				type="rotate"
+  				begin="1"
+  				dur="3"
+  				from="0,200,500"
+  				to="-360,200,500"
+  			
+  			/>
+  			
+  		</circle>
+  		
+  		<image x="200" y="320" width="250" height="250" xlink:href="img/schlitten.png">
+  		
+  			<animateTransform
+  				attributeName="transform"
+  				type="translate"
+  				begin="4"
+  				dur="2"
+  				from="0"
+  				to="600"
+  			/>
+  			<animateTransform
+  				attributeName="transform"
+  				type="translate"
+  				begin="10"
+  				dur="2"
+  				from="-420"
+  				to="0"
+  			/>
+  			
+  		</image>
+  		
+  		<text x="-700" y="100"
+  			style="font-size:40px;font-style:italic;stroke:midnightblue;fill:plum">
+  			
+  			& a happy new year 2024
+  			<animate
+  				attributeName="x"
+  				begin="2s"
+  				dur="2s"
+  				fill="freeze"
+  				values="500;10;-20;20;200"
+  			/>
+  		</text>
+  	
+  		</svg>
+  		
+ 	  </body>
+ </html> 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
