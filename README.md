@@ -2,7 +2,7 @@
 This is a very simple website hosted on Github Pages. 
 It's a simple christmas SVG Animation for learning purposes of hosting and SVG.
 
-Chckout the website: SheLearningCode.github.io/weihnachtenWeb/
+For more information, see the [SVG Animation](SheLearningCode/weihnachtenWeb/).
 
 
 Demo:
